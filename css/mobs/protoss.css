@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: Arial;
     font-size: 17px;
-	background-image: url("http://i.imgur.com/M1suKFC.png");
+	background-image: url("/res/bg.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -105,7 +105,7 @@ body {
 
 #con1 table{
 	margin-top:1%;
-	width:800px; 
+	width: 70%; 
 	margin:0 auto;
 	border-radius: 20px;
 }
