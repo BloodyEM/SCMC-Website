@@ -25,7 +25,7 @@ body {
     background-color: #222;
 }
 #nav_wrapper {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
     text-align: left;
 }
@@ -38,7 +38,12 @@ body {
 }
 #nav ul li {
     display: inline-block;
+	padding-left:30px;
+	padding-right:30px;
+	left:50px;
+	right:50px;
 }
+
 #nav ul li:hover {
     background-color: #333;
 }
@@ -137,6 +142,25 @@ body {
 	width:800px; 
 	margin:0 auto;
 	float:center;
+}
+
+#discord{
+    position: static;
+    visibility: visible;
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    border: none;
+    max-width: 520px;
+    min-width: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 200px;
+}
+
+div{
+	display: block;
 }
 
 
