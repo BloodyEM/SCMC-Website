@@ -1,1 +1,0 @@
-This is the code for SCMC's official website.
