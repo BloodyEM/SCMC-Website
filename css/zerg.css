@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: Arial;
     font-size: 17px;
-	background-image: url("/res/bg.png");
+	background-image: url("../res/bg.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -97,7 +97,7 @@ body {
 
 #con1 {
 	background-color:#333;
-	height:1600px;
+	height:100%;
 	width:50%;
 	margin-top:1%;
 	margin-left:1%;
@@ -110,18 +110,18 @@ body {
 
 #con1 table{
 	margin-top:1%;
-	width:800px; 
+	width: 70%; 
 	margin:0 auto;
 	border-radius: 20px;
 }
 
 #con1 h1, h2 {
-	color:#C9BE62;
+	color:#cc00cc;
 }
 
 #con1 table, td, tr {
 	border: 1px solid black;
-	background:#C9BE62;
+	background:#cc00cc;
 	border-collapse: collapse;
 }
 

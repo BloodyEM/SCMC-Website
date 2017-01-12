@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: Arial;
     font-size: 17px;
-	background-image: url("/res/bg.png");
+	background-image: url("../res/bg.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
