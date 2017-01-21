@@ -30,6 +30,7 @@
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js"></script>
     <script src="js/collapse.js"></script>
     <script src="js/preloader.js"></script>
 
@@ -42,168 +43,168 @@
 </head>
 
 <body id="page-top">
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
-    <div id="home">
-    </div>
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">SCMC</a>
-            </div>
+    <img src="img/preload.png" id="load">
+    <div id="makeinvisible">
+        <script>
+            document.getElementById("makeinvisible").style.display = "none";
+        </script>
+        <div id="home">
+        </div>
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">SCMC</a>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#home">Home</a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#forum">Forums</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#wiki">Wiki</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#download">Downloads</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="header-content">
+                            <div class="header-content-inner">
+                                <h1>SCMC is a mod that adds Starcraft content into Minecraft!</h1>
+                                <a href="#download" class="btn btn-outline btn-xl page-scroll">Download Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="forum" class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-heading">
+                            <h2>Interested in the forums?</h2>
+                            <p class="text-muted">Sorry, they don't exist yet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wiki" class="download bg-primary text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-heading">
+                            <h2>Confused? Check out the wiki!</h2>
+                            <p class="text-muted">Check out what you can do with this mod!</p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-heading">
+                            <h2>Come construct additional pylons!</h2>
+                            <p class="text-muted">The mod is up for download right now!</p>
+                            <a class="btn btn-outline-alt btn-xl" onclick="downloadsToggle();">Download Now!</a>
+                            <div class="collapse" id="versions" align="center">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <a class="btn btn-outline-dl btn-dl" href="">1.10.2 (Not yet released)</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="btn btn-outline-dl btn-dl" href="">1.7.10</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="contact">
+            <div class="cta-content">
+                <div class="container">
+                    <h2>Want to tell us something?</h2>
+                    <a href="#contact" class="btn btn-outline btn-xl page-scroll">Send a message!</a>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </section>
+
+        <section id="about" class="contact bg-primary">
+            <div class="container">
+                <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+                <ul class="list-inline list-social">
+                    <li class="social-twitter">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#forum">Forums</a>
+                    <li class="social-facebook">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#wiki">Wiki</a>
+                    <li class="social-google-plus">
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Downloads</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact Us</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                    <li class="social-discord">
+                        <a href="#"><i class="fa fa-discord"></i></a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+        </section>
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h1>SCMC is a mod that adds Starcraft content into Minecraft!</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Download Now!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section id="forum" class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Interested in the forums?</h2>
-                        <p class="text-muted">Sorry, they don't exist yet</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="wiki" class="download bg-primary text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Confused? Check out the wiki!</h2>
-                        <p class="text-muted">Check out what you can do with this mod!</p>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="download" class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Come construct additional pylons!</h2>
-                        <p class="text-muted">The mod is up for download right now!</p>
-                        <a class="btn btn-outline-alt btn-xl" onclick="downloadsToggle();">Download Now!</a>
-                        <div class="collapse" id="versions" align="center">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <a class="btn btn-outline-dl btn-dl" href="">1.10.2 (Not yet released)</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="btn btn-outline-dl btn-dl" href="">1.7.10</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta" id="contact">
-        <div class="cta-content">
+        <footer>
             <div class="container">
-                <h2>Want to tell us something?</h2>
-                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Send a message!</a>
+                <p>Created by the SCMC Development Team. Starcraft is the sole property of Blizzard Entertainment, Inc. No copyright infringement is intended.</p>
+                <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="overlay"></div>
-    </section>
-
-    <section id="about" class="contact bg-primary">
-        <div class="container">
-            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
-            <ul class="list-inline list-social">
-                <li class="social-twitter">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="social-facebook">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="social-google-plus">
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                </li>
-                <li class="social-discord">
-                    <a href="#"><i class="fa fa-discord"></i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>Created by the SCMC Development Team. Starcraft is the sole property of Blizzard Entertainment, Inc. No copyright infringement is intended.</p>
-            <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
-            <ul class="list-inline">
-                <li>
-                    <a href="#">Privacy</a>
-                </li>
-                <li>
-                    <a href="#">Terms</a>
-                </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
