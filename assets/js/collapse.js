@@ -13,3 +13,6 @@ function v2() {
     $("#versiondownloads2").slideToggle("slow");
     $("#versiondownloads1").slideUp("slow");
 }
+function bloody() {
+
+}
