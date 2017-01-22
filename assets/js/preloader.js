@@ -4,6 +4,6 @@
 $(document).ready(function() {
         $("#load").fadeOut(500, function() {
             document.getElementById("makeinvisible").style.opacity = "1";
-            $('body').css("background-color", "white").addClass("loaded");
+            $('body').addClass("loaded");
         });
 });
