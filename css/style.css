@@ -460,10 +460,23 @@ body {
     padding-right: 12.5px;
     padding-left: 12.5px;
     border-radius: 50%;
-    width: 192px;
+    max-width: 100%;
+    height: auto;
 }
 td {
     text-align: center;
+}
+table {
+    max-width: 100%;
+    height: auto;
+}
+tr {
+    max-width: 100%;
+    height: auto;
+}
+td {
+    max-width: 100%;
+    height: auto;
 }
 .socialimage {
     border-radius: 50%;

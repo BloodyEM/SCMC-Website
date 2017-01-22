@@ -3,8 +3,7 @@
  */
 $(document).ready(function() {
     $("#load").fadeOut(500, function() {
-        $("#makeinvisible").fadeIn(500, function() {
-            $('body').css("background-color", "white")
-        });
+        document.getElementById("makeinvisible").style.opacity = "1";
+        $('body').css("background-color", "white");
     });
 });
