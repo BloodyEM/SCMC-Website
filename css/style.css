@@ -468,4 +468,5 @@ td {
 .socialimage {
     border-radius: 50%;
     padding: 15px;
+    max-width: 100%;
 }
