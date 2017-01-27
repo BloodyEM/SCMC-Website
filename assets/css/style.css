@@ -457,6 +457,9 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222222;
 }
+.quote {
+    width: 100%;
+}
 .profile-pic {
     padding-right: 12.5px;
     padding-left: 12.5px;
