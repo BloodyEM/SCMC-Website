@@ -7,5 +7,5 @@ $(document).ready(function() {
             document.getElementById("makeinvisible").style.opacity = "1";
             $('body').addClass("loaded");
         });
-    }, 2);
+    }, 1000);
 });
