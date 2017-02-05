@@ -405,13 +405,19 @@ footer ul li a.active {
 }
 .btn-outline-alt {
     color: black;
+    border: 1px solid white;
+}
+.btn-outline-alt:hover,
+.btn-outline-alt:focus,
+.btn-outline-alt:active,
+.btn-outline-alt.active {
+    color: black;
+    background-color: white;
     border-color: white;
-    border: 1px solid;
 }
 .btn-outline-dl {
     color: black;
-    border-color: white;
-    border: 1px solid;
+    border: 1px solid black;
 }
 .btn-outline:hover,
 .btn-outline:focus,
@@ -431,6 +437,11 @@ footer ul li a.active {
     padding: 15px 45px;
     font-size: 11px;
 }
+.btn-xl-alt {
+    padding: 15px 45px;
+    font-size: 11px;
+}
+.btn-xl-alt.
 .btn-dl {
     font-size: 11px;
     padding: 15px 45px;
@@ -457,10 +468,7 @@ body {
     webkit-tap-highlight-color: #222222;
 }
 .profile-pic {
-    padding-right: 12.5px;
-    padding-left: 12.5px;
-    padding-bottom: 12.5px;
-    padding-top: 12.5px;
+    padding: 12.5px;
     border-radius: 50%;
     max-width: 100%;
     height: auto;

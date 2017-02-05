@@ -120,14 +120,40 @@
     </div>
 </section>
 
-<section id="wiki" class="download bg-primary text-center">
-    <div class="container">
+<section id="wiki" class="cta">
+    <div class="cta-content">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="section-heading">
                     <h2>Confused? Check out the wiki!</h2>
                     <hr>
-                    <p class="text-muted">Check out what you can do with this mod!</p>
+                    <a onclick="wiki();" class="btn btn-outline btn-xl page-scroll text-muted">Check out what you can do with this mod!</a>
+                    <hr>
+                    <div class="collapse" id="wiki_content">
+                        <ul class="list-inline">
+                            <a onclick="wiki_mobs();" class="btn btn-outline btn-xl page-scroll text-muted">Mobs</a>
+                            <a onclick="wiki_items();" class="btn btn-outline btn-xl page-scroll text-muted">Items</a>
+                            <a onclick="wiki_biomes();" class="btn btn-outline btn-xl page-scroll text-muted">Biomes</a>
+                            <a onclick="wiki_recipes();" class="btn btn-outline btn-xl page-scroll text-muted">Recipes</a>
+                            <a onclick="wiki_bosses();" class="btn btn-outline btn-xl page-scroll text-muted">Bosses</a>
+                            <a onclick="wiki_blocks();" class="btn btn-outline btn-xl page-scroll text-muted">Blocks</a>
+                            <a onclick="wiki_dimensions();" class="btn btn-outline btn-xl page-scroll text-muted">Dimensions</a>
+                        </ul>
+                        <div class="collapse" id="wiki_mobs">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a onclick="wiki_mobs_protoss();" class="btn btn-outline btn-xl page-scroll text-muted">Protoss</a>
+                                        <div class="collapse" id="wiki_mobs_protoss">
+                                            <ul>
+                                                <a onclick="wiki_mobs_protoss_probe();" class="btn btn-outline btn-xl page-scroll text-muted">Probe</a>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,8 +167,8 @@
                 <div class="section-heading">
                     <h2>Come construct additional pylons!</h2>
                     <p class="text-muted">The mod is up for download right now!</p>
-                    <a class="btn btn-outline-dl btn-dl" onclick="v2();" id="version1">1.10.2</a>
-                    <a class="btn btn-outline-dl btn-dl" onclick="v1();" id="version2">1.7.10</a>
+                    <a class="btn btn-outline-dl btn-dl btn-xl" onclick="v2();" id="version1">1.10.2</a>
+                    <a class="btn btn-outline-dl btn-dl btn-xl" onclick="v1();" id="version2">1.7.10</a>
                     <div id="versiondownloads1" class="collapse" align="center">
                         <a class="btn btn-outline-dl btn-dl" href="http://adf.ly/1i1pJq">1.4.1</a>
                         <a class="btn btn-outline-dl btn-dl" href="http://adf.ly/1i1pFQ">1.4</a>
@@ -167,22 +193,10 @@
     <div class="cta-content">
         <div class="container">
             <h2 align="center">We <i class="fa fa-heart"></i> new friends!</h2>
-            <ul class="list-inline list-social">
-                <table align="center">
-                    <tr>
-                        <td>
-                            <a href="https://twitter.com/SCMCDevTeam"><img border="0" src="assets/img/twitter.jpg" class="socialimage"></a>
-                        </td>
-                        <td>
-                            <a href="https://discord.gg/eBCKU3r"><img border="0" class="socialimage" src="assets/img/discord.jpg"></a>
-                        </td>
-                        <td>
-                            <a href="https://www.facebook.com/SCMCDevTeam/?ref=bookmarks"><img border="0" class="socialimage" src="assets/img/fb.png"></a>
-                        </td>
-                    </tr>
-                </table>
-
-
+            <ul align="center" class="list-inline list-social">
+                <a href="https://twitter.com/SCMCDevTeam"><img border="0" src="assets/img/twitter.jpg" class="socialimage"></a>
+                <a href="https://discord.gg/eBCKU3r"><img border="0" class="socialimage" src="assets/img/discord.jpg"></a>
+                <a href="https://www.facebook.com/SCMCDevTeam/?ref=bookmarks"><img border="0" class="socialimage" src="assets/img/fb.png"></a>
             </ul>
         </div>
     </div>
@@ -193,11 +207,9 @@
     <div class="container">
         <div class="col-lg-12 text-center">
             <h2 align="center">About</h2>
-            <a align="center" onclick="teamToggle()" class="btn btn-outline-alt btn-xl">Meet the Team!</a>
+            <h3>Meet the Team!</h3>
+
         </div>
-    </div>
-    <div id="team" class="collapse" align="center">
-        <hr style="opacity: 0">
         <table width="100%">
             <tr>
                 <td>
@@ -252,33 +264,6 @@
                 </td>
             </tr>
         </table>
-    </div>
-</section>
-
-<section id="join" class="contact bg-primary">
-    <div class="container">
-        <h2>We <i class="fa fa-heart"></i> new friends!</h2>
-        <ul class="list-inline list-social">
-            <table align="center">
-                <tr>
-                    <td>
-                        <a href="https://twitter.com/SCMCDevTeam"><img border="0" src="assets/img/twitter.jpg"
-                                                                       class="socialimage"></a>
-                    </td>
-                    <td>
-                        <a href="https://discord.gg/eBCKU3r"><img border="0" class="socialimage"
-                                                                  src="assets/img/discord.jpg"></a>
-                    </td>
-                    <td>
-                        <a href="https://www.facebook.com/SCMCDevTeam/?ref=bookmarks"><img border="0"
-                                                                                           class="socialimage"
-                                                                                           src="assets/img/fb.png"></a>
-                    </td>
-                </tr>
-            </table>
-
-
-        </ul>
     </div>
 </section>
 
