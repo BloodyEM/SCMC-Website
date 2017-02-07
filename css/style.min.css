@@ -68,7 +68,8 @@ p {
     border-color: rgba(34, 34, 34, .05);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
-    transition: all .35s
+    transition: all .35s;
+    width: 100%
 }
 
 .navbar-default .navbar-header .navbar-brand {
