@@ -30,9 +30,6 @@
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/js/collapse.js"></script>
-    <script src="assets/js/preloader.js"></script>
-    <script src="assets/js/getcontent.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,14 +40,14 @@
 </head>
 
 <body id="page-top">
+<!-- Start preloader -->
 <img border="0" src="assets/img/preload.png" id="load">
 <div id="loader-wrapper">
     <div id="loader"></div>
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
 </div>
-<script>
-</script>
+<!--End preloader -->
 <div id="home">
 </div>
 <div id="makeinvisible">
@@ -75,7 +72,7 @@
                         <a class="page-scroll" href="#forum">Forums</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#wiki">Wiki</a>
+                        <a class="page-scroll" href="#wikisection">Wiki</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#download">Downloads</a>
@@ -121,45 +118,43 @@
     </div>
 </section>
 
-<section id="wiki" class="cta">
+<section id="wikisection" class="cta">
     <div class="cta-content">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="section-heading">
                     <h2>Confused? Check out the wiki!</h2>
                     <hr>
-                    <a onclick="wiki();" class="btn btn-outline btn-xl page-scroll text-muted">Check out what you can do with this mod!</a>
+                    <a href="#wiki" data-toggle="collapse" class="portfolio-link btn btn-outline btn-xl text-muted">Check out what you can do with this mod!</a>
                     <hr>
                     <div class="collapse" id="wiki_content">
-                        <ul class="list-inline">
-                            <a onclick="wiki_mobs();" class="btn btn-outline btn-xl page-scroll text-muted">Mobs</a>
-                            <a onclick="wiki_items();" class="btn btn-outline btn-xl page-scroll text-muted">Items</a>
-                            <a onclick="wiki_biomes();" class="btn btn-outline btn-xl page-scroll text-muted">Biomes</a>
-                            <a onclick="wiki_recipes();" class="btn btn-outline btn-xl page-scroll text-muted">Recipes</a>
-                            <a onclick="wiki_bosses();" class="btn btn-outline btn-xl page-scroll text-muted">Bosses</a>
-                            <a onclick="wiki_blocks();" class="btn btn-outline btn-xl page-scroll text-muted">Blocks</a>
-                            <a onclick="wiki_dimensions();" class="btn btn-outline btn-xl page-scroll text-muted">Dimensions</a>
-                        </ul>
-                        <div class="collapse" id="wiki_mobs">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <a onclick="wiki_mobs_protoss();" class="btn btn-outline btn-xl page-scroll text-muted">Protoss</a>
-                                        <div class="collapse" id="wiki_mobs_protoss">
-                                            <ul>
-                                                <a onclick="wiki_mobs_protoss_probe();" class="btn btn-outline btn-xl page-scroll text-muted">Probe</a>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<div class="collapse" id="wiki">
+    <section class="features">
+        <div class="cta-content">
+            <div class="row">
+                <ul class="list-inline" align="center">
+                    <a onclick="wiki_mobs();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Mobs</a>
+                    <a onclick="wiki_items();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Items</a>
+                    <a onclick="wiki_biomes();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Biomes</a>
+                    <a onclick="wiki_recipes();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Recipes</a>
+                    <a onclick="wiki_bosses();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Bosses</a>
+                    <a onclick="wiki_blocks();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Blocks</a>
+                    <a onclick="wiki_dimensions();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Dimensions</a>
+                </ul>
+                <div id="wiki_mobs">
+                    <h1 align="center">Mob Content</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta"></section>
+</div>
 
 <section id="download" class="features">
     <div class="container">
@@ -744,6 +739,11 @@
 
 <!-- Theme JavaScript -->
 <script src="assets/js/site.min.js"></script>
+
+<!--Functional javascript -->
+<script src="assets/js/collapse.js"></script>
+<script src="assets/js/getcontent.js"></script>
+<script src="assets/js/preloader.js"></script>
 
 </body>
 

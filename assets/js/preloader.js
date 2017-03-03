@@ -1,11 +1,12 @@
 /**
  * Created by RAVE on 1/20/2017.
  */
-//$(document).ready(function() {
-setTimeout(function() {
+jQuery(window).load(function() {
     $("#load").fadeOut(500, function() {
-        document.getElementById("makeinvisible").style.opacity = "1";
-        $('body').addClass("loaded");
+        $("#loader-wrapper").fadeOut(500, function() {
+            $("#makeinvisible").fadeIn(500, function() {
+                $('body').css("background-color", "white")
+            });
+        });
     });
-}, 1000);
-//});
+});

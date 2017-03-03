@@ -12,9 +12,6 @@ function v2() {
     $("#versiondownloads2").slideToggle("slow");
     $("#versiondownloads1").slideUp("slow");
 }
-function wiki() {
-    $("#wiki_content").slideToggle("slow");
-}
 function wiki_mobs() {
     $("#wiki_mobs").slideToggle("slow");
 }
