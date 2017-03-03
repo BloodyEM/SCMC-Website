@@ -60,6 +60,7 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">SCMC</a>
+                <a class="navbar-brand page-scroll" data-toggle="modal" href="#twittermodal"><img class="navbar-icon" src="assets/img/twitter.jpg"> </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -125,7 +126,8 @@
                 <div class="section-heading">
                     <h2>Confused? Check out the wiki!</h2>
                     <hr>
-                    <a href="#wiki" data-toggle="collapse" class="portfolio-link btn btn-outline btn-xl text-muted">Check out what you can do with this mod!</a>
+                    <a href="#wiki" data-toggle="collapse" class="portfolio-link btn btn-outline btn-xl text-muted">Check
+                        out what you can do with this mod!</a>
                     <hr>
                     <div class="collapse" id="wiki_content">
                     </div>
@@ -141,10 +143,14 @@
                 <ul class="list-inline" align="center">
                     <a onclick="wiki_mobs();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Mobs</a>
                     <a onclick="wiki_items();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Items</a>
-                    <a onclick="wiki_biomes();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Biomes</a>
-                    <a onclick="wiki_recipes();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Recipes</a>
-                    <a onclick="wiki_bosses();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Bosses</a>
-                    <a onclick="wiki_blocks();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Blocks</a>
+                    <a onclick="wiki_biomes();"
+                       class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Biomes</a>
+                    <a onclick="wiki_recipes();"
+                       class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Recipes</a>
+                    <a onclick="wiki_bosses();"
+                       class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Bosses</a>
+                    <a onclick="wiki_blocks();"
+                       class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Blocks</a>
                     <a onclick="wiki_dimensions();" class="btn btn-outline-dl btn-xl btn-dl page-scroll text-muted">Dimensions</a>
                 </ul>
                 <div id="wiki_mobs" class="collapse">
@@ -173,8 +179,9 @@
     </section>
     <section class="cta">
         <div class="cta-content">
-            <div class="row">
-                <a href="#wiki" data-toggle="collapse" class="portfolio-link btn btn-outline btn-xl text-muted">Press this to close the wiki</a>
+            <div class="row" align="center">
+                <a href="#wiki" data-toggle="collapse" class="portfolio-link btn btn-outline btn-xl text-muted">Press
+                    this to close the wiki</a>
             </div>
         </div>
     </section>
@@ -204,7 +211,6 @@
                     <div id="versiondownloads2" class="collapse" align="center">
                         <p class="text-muted">Still not released...</p>
                         -->
-                    </div>
                 </div>
             </div>
         </div>
@@ -213,20 +219,15 @@
 
 <section class="cta" id="contact">
     <div class="cta-content">
-        <div style="position: relative; left: 0px; top: 0px; bottom: 0px;">
-            <a id="twitter" class="twitter-timeline"data-width="400" data-height="1020" data-theme="dark" href="https://twitter.com/SCMCDevTeam">Tweets by SCMCDevTeam</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        <script>
-            var height = document.getElementById('contact').offsetHeight;
-            console.log(height);
-            $("#twitter").
-        </script>
         <div class="container">
             <h2 align="center">We <i class="fa fa-heart"></i> new friends!</h2>
             <ul align="center" class="list-inline list-social">
-                <a href="https://twitter.com/SCMCDevTeam"><img border="0" src="assets/img/twitter.jpg" class="socialimage"></a>
-                <a href="https://discord.gg/eBCKU3r"><img border="0" class="socialimage" src="assets/img/discord.jpg"></a>
-                <a href="https://www.facebook.com/SCMCDevTeam/?ref=bookmarks"><img border="0" class="socialimage" src="assets/img/fb.png"></a>
+                <a href="https://twitter.com/SCMCDevTeam"><img border="0" src="assets/img/twitter.jpg"
+                                                               class="socialimage"></a>
+                <a href="https://discord.gg/eBCKU3r"><img border="0" class="socialimage"
+                                                          src="assets/img/discord.jpg"></a>
+                <a href="https://www.facebook.com/SCMCDevTeam/?ref=bookmarks"><img border="0" class="socialimage"
+                                                                                   src="assets/img/fb.png"></a>
             </ul>
         </div>
     </div>
@@ -759,6 +760,19 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="twittermodal" tabindex="-1" role="dialog"
+     aria-hidden="true">
+    <div class="modal-content" align="center">
+        <div>
+            <a id="twitter" class="twitter-timeline" data-width="400" data-height="910px" data-theme="dark"
+               href="https://twitter.com/SCMCDevTeam">Tweets by SCMCDevTeam</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <button type="button" class="btn btn-default"
+                data-dismiss="modal"><i class="fa fa-times"></i> Close
+        </button>
     </div>
 </div>
 

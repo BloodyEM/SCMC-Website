@@ -497,3 +497,10 @@ td {
 img {
     border-style: none;
 }
+.navbar-icon {
+    border-radius: 50%;
+    position: fixed;
+    top: 8px;
+    bottom: 16px;
+    max-height: 32px;
+}
