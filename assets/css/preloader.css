@@ -7,9 +7,9 @@
     z-index: 1000;
 }
 #load {
-    position: fixed;
-    top: 50%;
-    left: 50%;
+    position: Fixed;
+    top: 55%;
+    left: 55%;
     margin-top: -250px;
     margin-left: -250px;
     animation: bob 1.5s linear infinite;
