@@ -7,10 +7,20 @@ function teamToggle() {
 function v1() {
     $("#versiondownloads1").slideToggle("slow");
     $("#versiondownloads2").slideUp("slow");
+	$("#versiondownloads3").slideUp("slow");
 }
 function v2() {
     $("#versiondownloads2").slideToggle("slow");
     $("#versiondownloads1").slideUp("slow");
+	$("#versiondownloads3").slideUp("slow");
+}
+function v3() {
+    $("#versiondownloads3").slideToggle("slow");
+    $("#versiondownloads1").slideUp("slow");
+	$("#versiondownloads2").slideUp("slow");
+}
+function v4() {
+    $("#developerstab").slideToggle("slow");
 }
 function wiki_collapse_all() {
     $("#wiki_mobs").slideUp("slow");
